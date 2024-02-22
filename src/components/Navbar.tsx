@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import { FaUser } from "react-icons/fa";
 import CustomPopup from "./CustomPopup";
+import { Logo } from "../assets/header/Logo";
 
 const Navbar: FC = () => {
   const dispatch = useAppDispatch();
@@ -22,11 +23,12 @@ const Navbar: FC = () => {
   };
 
   return (
-    <div className="py-4 bg-white top-0 sticky z-10 shadow-lg font-karla">
+    <div className="py-4 fundo-color-salmao-e-rosa-claro top-0 sticky z-10 shadow-lg font-karla">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-4xl font-bold" data-test="main-logo">
-            Shopify
+            <Logo />
+            CupCake Mundi
           </Link>
           <div className="lg:flex hidden w-full max-w-[500px]">
             <input

@@ -1,0 +1,24 @@
+/* ------------------ BACKGRONDS ------------------- */
+
+.fundo-color-salmao {
+  background: #f3d7ca;
+}
+
+.fundo-color-salmao-e-rosa-claro {
+  background: rgb(232, 178, 152);
+  background: linear-gradient(
+    0deg,
+    rgba(232, 178, 152, 1) 0%,
+    rgba(243, 215, 202, 1) 100%
+  );
+}
+
+.fundo-color-rosa-claro {
+  background: #e8b298;
+}
+
+/* ------------------ COLORS ------------------- */
+
+.color-rosa-escuro {
+  color: #a36361;
+}

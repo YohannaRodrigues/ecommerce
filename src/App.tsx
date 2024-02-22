@@ -13,10 +13,12 @@ import Wishlist from "./pages/Wishlist";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Profile from "./pages/Profile";
 import AllProducts from "./pages/AllProducts";
+import TopBar from "./components/TopBar";
 
 function App() {
   return (
     <Provider store={store}>
+      <TopBar />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
