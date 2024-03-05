@@ -1,4 +1,10 @@
-/* ------------------ BACKGRONDS ------------------- */
+/* ------------------ Fonts ------------------- */
+
+.font-mont {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ------------------ BACKGRONDS -------------- */
 
 .bg-custom {
   background-image: url("assets/background.png");
@@ -6,25 +12,12 @@
   background-position: center center;
 }
 
-.fundo-color-salmao {
-  background: #f3d7ca;
-}
-
-.fundo-color-salmao-e-rosa-claro {
-  background: rgb(232, 178, 152);
-  background: linear-gradient(
-    0deg,
-    rgba(232, 178, 152, 1) 0%,
-    rgba(243, 215, 202, 1) 100%
-  );
-}
-
-.fundo-color-rosa-claro {
-  background: #e8b298;
+.bg-clean {
+  background: #ffffff47;
 }
 
 /* ------------------ COLORS ------------------- */
 
-.color-rosa-escuro {
-  color: #a36361;
+.cl-vinho {
+  color: #760e07;
 }

@@ -27,3 +27,7 @@ Utilizei um projeto base react (https://github.com/alim1496/simple-react-ecommer
 2. Instale dependências usando npm install ou yarn install.
 3. Inicie o servidor de desenvolvimento usando npm run dev ou yarn dev.
 4. Abra seu navegador e navegue até http://localhost:5173para visualizar o aplicativo.
+
+**Para realizar o login use**:
+user: atuny0
+senha: 9uQFF1Lh

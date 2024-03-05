@@ -9,6 +9,7 @@ import useAuth from "../hooks/useAuth";
 import { FaUser } from "react-icons/fa";
 import CustomPopup from "./CustomPopup";
 import { Logo } from "../assets/header/Logo";
+import { Minicard } from "../assets/header/Minicard";
 
 const Navbar: FC = () => {
   const dispatch = useAppDispatch();
@@ -23,23 +24,13 @@ const Navbar: FC = () => {
   };
 
   return (
-    <div className="py-4 fundo-color-salmao-e-rosa-claro top-0 sticky z-10 shadow-lg font-karla">
+    <div className="py-4 cl-vinho top-0 sticky z-10 shadow-lg ">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-4xl font-bold" data-test="main-logo">
             <Logo />
-            CupCake Mundi
           </Link>
-          <div className="lg:flex hidden w-full max-w-[500px]">
-            <input
-              type="text"
-              placeholder="Search for a product..."
-              className="border-2 border-blue-500 px-6 py-2 w-full"
-            />
-            <div className="bg-blue-500 text-white text-[26px] grid place-items-center px-4">
-              <BsSearch />
-            </div>
-          </div>
+
           <div className="flex gap-4 md:gap-8 items-center">
             <Link
               to="/products"
@@ -48,17 +39,9 @@ const Navbar: FC = () => {
             >
               Products
             </Link>
+            <div className=" max-w-[100px]">busca</div>
             <div className="flex items-center gap-2">
-              {username !== "" ? (
-                <img
-                  src="https://robohash.org/Terry.png?set=set4"
-                  alt="avatar"
-                  className="w-6"
-                />
-              ) : (
-                <FaUser className="text-gray-500 text-2xl" />
-              )}
-              <div className="text-gray-500 text-2xl">
+              <div className=" text-2xl">
                 {username !== "" ? (
                   <CustomPopup />
                 ) : (
@@ -67,19 +50,19 @@ const Navbar: FC = () => {
                     onClick={() => dispatch(updateModal(true))}
                     data-test="login-btn"
                   >
-                    Login
+                    <FaUser className=" text-2xl" />
                   </span>
                 )}
               </div>
             </div>
             <div
-              className="text-gray-500 text-[32px] relative hover:cursor-pointer hover:opacity-80"
+              className=" text-[32px] relative hover:cursor-pointer hover:opacity-80"
               onClick={showCart}
               data-test="cart-btn"
             >
-              <AiOutlineShoppingCart />
+              <Minicard />
               <div
-                className="absolute top-[-15px] right-[-10px] bg-red-600 w-[25px] h-[25px] rounded-full text-white text-[14px] grid place-items-center"
+                className="absolute top-[-15px] right-[-10px]  w-[25px] h-[25px] rounded-full cl-vinho text-[14px] grid place-items-center"
                 data-test="cart-item-count"
               >
                 {cartCount}
