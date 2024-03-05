@@ -17,25 +17,27 @@ import TopBar from "./components/TopBar";
 
 function App() {
   return (
-    <Provider store={store}>
-      <TopBar />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<AllProducts />} />
-        <Route path="/product/:productID" element={<SingleProduct />} />
-        <Route path="/wishlist" element={<ProtectedRoute />}>
-          <Route path="/wishlist" element={<Wishlist />} />
-        </Route>
-        <Route path="/account" element={<ProtectedRoute />}>
-          <Route path="/account" element={<Profile />} />
-        </Route>
-      </Routes>
-      <Toaster position="bottom-center" reverseOrder={false} />
-      <Footer />
-      <Cart />
-      <LoginModal />
-    </Provider>
+    <div className=" bg-custom top-0">
+      <Provider store={store}>
+        <TopBar />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<AllProducts />} />
+          <Route path="/product/:productID" element={<SingleProduct />} />
+          <Route path="/wishlist" element={<ProtectedRoute />}>
+            <Route path="/wishlist" element={<Wishlist />} />
+          </Route>
+          <Route path="/account" element={<ProtectedRoute />}>
+            <Route path="/account" element={<Profile />} />
+          </Route>
+        </Routes>
+        <Toaster position="bottom-center" reverseOrder={false} />
+        <Footer />
+        <Cart />
+        <LoginModal />
+      </Provider>
+    </div>
   );
 }
 

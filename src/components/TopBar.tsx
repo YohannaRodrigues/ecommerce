@@ -14,7 +14,7 @@ const TopBar: FC = () => {
   const username = useAppSelector((state) => state.authReducer.username);
 
   return (
-    <div className="py-2 fundo-color-salmao top-0 z-10 font-karla">
+    <div className="py-2 bg-custom top-0 z-10 font-karla">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex justify-between items-center">

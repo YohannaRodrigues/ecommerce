@@ -1,5 +1,11 @@
 /* ------------------ BACKGRONDS ------------------- */
 
+.bg-custom {
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center center;
+}
+
 .fundo-color-salmao {
   background: #f3d7ca;
 }
