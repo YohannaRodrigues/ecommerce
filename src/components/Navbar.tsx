@@ -1,6 +1,4 @@
 import { FC } from "react";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import { BsSearch } from "react-icons/bs";
 import { useAppSelector, useAppDispatch } from "../redux/hooks";
 import { setCartState } from "../redux/features/cartSlice";
 import { updateModal } from "../redux/features/authSlice";
@@ -10,6 +8,7 @@ import { FaUser } from "react-icons/fa";
 import CustomPopup from "./CustomPopup";
 import { Logo } from "../assets/header/Logo";
 import { Minicard } from "../assets/header/Minicard";
+import Search from "./Search/Search";
 
 const Navbar: FC = () => {
   const dispatch = useAppDispatch();
@@ -24,8 +23,8 @@ const Navbar: FC = () => {
   };
 
   return (
-    <div className="py-4 cl-vinho top-0 sticky z-10 shadow-lg ">
-      <div className="container mx-auto px-4">
+    <div className="py-4 cl-vinho shadow-lg absolute w-full">
+      <div className="container mx-auto px-2">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-4xl font-bold" data-test="main-logo">
             <Logo />
@@ -39,7 +38,9 @@ const Navbar: FC = () => {
             >
               Products
             </Link>
-            <div className=" max-w-[100px]">busca</div>
+            <div className=" max-w-[100px]">
+              <Search />
+            </div>
             <div className="flex items-center gap-2">
               <div className=" text-2xl">
                 {username !== "" ? (
