@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import { FaUser } from "react-icons/fa";
 import CustomPopup from "./CustomPopup";
-import { Logo } from "../assets/header/Logo";
 import { Minicard } from "../assets/header/Minicard";
 import Search from "./Search/Search";
 
@@ -23,13 +22,15 @@ const Navbar: FC = () => {
   };
 
   return (
-    <div className="py-4 cl-vinho shadow-lg absolute w-full">
+    <div className="py-4 cl-vinho uppercase absolute w-full">
       <div className="container mx-auto px-2">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-4xl font-bold" data-test="main-logo">
-            <Logo />
-          </Link>
-
+          <div>
+            <Link to="/" className="text-base font-bold" data-test="main-logo">
+              CAKEMUNDICUP
+            </Link>
+            FUTURO MENU
+          </div>
           <div className="flex gap-4 md:gap-8 items-center">
             <Link
               to="/products"
@@ -37,7 +38,7 @@ const Navbar: FC = () => {
               data-test="main-products"
             >
               Products
-            </Link>
+            </Link>{" "}
             <div className=" max-w-[100px]">
               <Search />
             </div>

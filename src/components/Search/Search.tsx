@@ -28,11 +28,7 @@ const Search: React.FC = () => {
 
   return (
     <div>
-      <SearchInput
-        value={searchTerm}
-        onChange={handleChange}
-        onClick={handleSearch}
-      />
+      <SearchInput value={searchTerm} onChange={handleChange} />
 
       <SearchResultList results={searchResults} />
     </div>

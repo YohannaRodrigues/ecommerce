@@ -16,8 +16,8 @@ import AllProducts from "./pages/AllProducts";
 
 function App() {
   return (
-    <div className=" bg-custom p-5 ">
-      <div className="bg-clean rounded-3xl font-mont relative">
+    <div className=" bg-custom ">
+      <div className="bg-clean rounded-3xl font-com relative">
         <Provider store={store}>
           <Navbar />
           <Routes>
