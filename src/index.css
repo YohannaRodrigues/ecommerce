@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&family=Lato&family=Lora:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap");
+@import url("./swiper-imports.css");
 
 @tailwind base;
 @tailwind components;

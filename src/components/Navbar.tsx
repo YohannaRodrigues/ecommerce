@@ -27,7 +27,7 @@ const Navbar: FC = () => {
         <div className="flex justify-between items-center">
           <div>
             <Link to="/" className="text-base font-bold" data-test="main-logo">
-              CAKEMUNDICUP
+              CHERRYMUNDI
             </Link>
             FUTURO MENU
           </div>
