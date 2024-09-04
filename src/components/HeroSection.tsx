@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 const HeroSection: FC = () => {
   return (
-    <div className="bg-[#e3edf6] font-lora">
+    <div>
+      <img src="/banners/banner01.png" alt="banner" className="max-h-[500px]" />
       <div className="container px-4 grid md:grid-cols-2 py-8 mx-auto">
         <div className="flex items-center">
           <div className="max-w-[450px] space-y-4">
@@ -25,9 +26,6 @@ const HeroSection: FC = () => {
               Shop Now
             </Link>
           </div>
-        </div>
-        <div>
-          <img src="/hero.png" alt="hero" className="ml-auto" />
         </div>
       </div>
     </div>

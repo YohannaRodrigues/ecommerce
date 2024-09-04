@@ -22,7 +22,7 @@ const Navbar: FC = () => {
   };
 
   return (
-    <div className="py-4 cl-vinho uppercase absolute w-full">
+    <div className="py-4 text-slate-100 uppercase absolute w-full z-10">
       <div className="container mx-auto px-2">
         <div className="flex justify-between items-center">
           <div>
@@ -64,7 +64,7 @@ const Navbar: FC = () => {
             >
               <Minicard />
               <div
-                className="absolute top-[-15px] right-[-10px]  w-[25px] h-[25px] rounded-full cl-vinho text-[14px] grid place-items-center"
+                className="absolute top-[-15px] right-[-10px]  w-[25px] h-[25px] rounded-full text-slate-100 text-[14px] grid place-items-center"
                 data-test="cart-item-count"
               >
                 {cartCount}

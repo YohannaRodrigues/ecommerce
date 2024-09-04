@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Link } from "react-router-dom";
 import { Facebook } from "../assets/header/Facebook";
 import { Instagram } from "../assets/header/Instagram";
-import { Twitter } from "../assets/header/twitter";
+import { Twitter } from "../assets/header/Twitter";
 import { Youtube } from "../assets/header/Youtube";
 
 const Footer: FC = () => (

@@ -35,7 +35,11 @@ const Banner: FC = () => (
           return (
             <SwiperSlide key={item.link}>
               <div>
-                <img src={item.img} alt="banner" />
+                <img
+                  src={item.img}
+                  alt="banner"
+                  className="max-h-[700px] w-full"
+                />
                 <div className="absolute top-1/4 left-12">
                   <p>Veja</p>
                   <p>Nova coleção</p>

@@ -42,10 +42,10 @@ const Home: FC = () => {
 
   return (
     <>
-      <HeroSection />
+      <Banner />
       <Features />
       <TrendingProducts />
-      <Banner />
+      <HeroSection />
       <LatestProducts />
       <br />
     </>
