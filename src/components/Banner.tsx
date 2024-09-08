@@ -18,7 +18,7 @@ const banners = [
 ];
 
 const Banner: FC = () => (
-  <div className="">
+  <div className="font-montserrat">
     <div className="min-w-full relative">
       {" "}
       <Swiper
@@ -40,10 +40,10 @@ const Banner: FC = () => (
                   alt="banner"
                   className="max-h-[700px] w-full"
                 />
-                <div className="absolute top-1/4 left-12">
-                  <p>Veja</p>
-                  <p>Nova coleção</p>
-                  <p>{item.text}</p>
+                <div className="absolute top-1/4 p-[5%] text-slate-50">
+                  <p className="text-sm lg:text-4xl">Veja</p>
+                  <p className="text-4xl">Nova coleção</p>
+                  <p className="text-base">{item.text}</p>
                   <Link to={item.link}>TESTANDO</Link>
                 </div>
               </div>

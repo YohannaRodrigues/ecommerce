@@ -7,6 +7,7 @@ export default {
         karla: ["Karla", "sans-serif"],
         lato: ["Lato", "sans-serif"],
         lora: ["Lora", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },
