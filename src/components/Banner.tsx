@@ -34,17 +34,16 @@ const Banner: FC = () => (
         {banners.map((item) => {
           return (
             <SwiperSlide key={item.link}>
-              <div>
+              <div className="flex justify-center">
                 <img
                   src={item.img}
                   alt="banner"
-                  className="max-h-[700px] w-full"
+                  className="max-h-[800px] w-full"
                 />
-                <div className="absolute top-1/4 p-[5%] text-slate-50">
+                <div className="absolute top-1/3 mx-auto p-[2%] w-full container text-slate-50">
                   <p className="text-sm lg:text-4xl">Veja</p>
                   <p className="text-4xl">Nova coleção</p>
-                  <p className="text-base">{item.text}</p>
-                  <Link to={item.link}>TESTANDO</Link>
+                  <Link to={item.link}>{item.text}</Link>
                 </div>
               </div>
             </SwiperSlide>

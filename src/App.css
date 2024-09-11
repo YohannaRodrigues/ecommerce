@@ -1,13 +1,13 @@
 /* ------------------ BACKGRONDS -------------- */
 
 .bg-custom {
-  background-image: url("assets/backgrond.png");
+  background-image: url("assets/background.jpg");
   background-size: cover;
   background-position: center center;
 }
 
 .bg-clean {
-  background: #ffffff47;
+  background: #00000047;
 }
 
 /* ------------------ COLORS ------------------- */

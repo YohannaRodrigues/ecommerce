@@ -22,8 +22,8 @@ const Navbar: FC = () => {
   };
 
   return (
-    <div className="py-4 text-slate-100 uppercase absolute w-full z-10">
-      <div className="container mx-auto px-2">
+    <div className="text-slate-100 uppercase absolute w-full z-10">
+      <div className="container mx-auto p-[2%]">
         <div className="flex justify-between items-center">
           <div>
             <Link to="/" className="text-base font-bold" data-test="main-logo">
