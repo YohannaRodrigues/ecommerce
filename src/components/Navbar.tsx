@@ -8,6 +8,7 @@ import { FaUser } from "react-icons/fa";
 import CustomPopup from "./CustomPopup";
 import { Minicard } from "../assets/header/Minicard";
 import Search from "./Search/Search";
+import { Logo } from "../assets/header/Logo";
 
 const Navbar: FC = () => {
   const dispatch = useAppDispatch();
@@ -23,11 +24,17 @@ const Navbar: FC = () => {
 
   return (
     <div className="text-slate-100 uppercase absolute w-full z-10">
-      <div className="container mx-auto p-[2%]">
+      <div className="mx-auto p-[2%]">
         <div className="flex justify-between items-center">
           <div>
-            <Link to="/" className="text-base font-bold" data-test="main-logo">
-              CHERRYMUNDI
+            <Link
+              to="/"
+              className="text-base font-bold flex items-center"
+              data-test="main-logo"
+            >
+              COF
+              <Logo />
+              MUNDI
             </Link>
             FUTURO MENU
           </div>

@@ -1,12 +1,16 @@
-import { FC, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useAppSelector, useAppDispatch } from "../redux/hooks";
 import { addCategories, addProducts } from "../redux/features/productSlice";
 import ProductCard from "../components/ProductCard";
 import { Product } from "../models/Product";
+import { useParams } from "react-router-dom";
 
-const AllProducts: FC = () => {
+const AllProducts = () => {
+  const { categoryId } = useParams();
+
+  console.log("categoryID", categoryId);
   const dispatch = useAppDispatch();
-  const [category, setCategory] = useState("all");
+  const [category, setCategory] = useState(categoryId);
   const sortRef = useRef<HTMLSelectElement>(null);
   const [currentProducts, setCurrentProducts] = useState<Product[]>([]);
   const allProducts = useAppSelector(
@@ -15,6 +19,9 @@ const AllProducts: FC = () => {
   const allCategories = useAppSelector(
     (state) => state.productReducer.categories
   );
+
+  console.log("allProducts", allProducts);
+  console.log("allCategories", allCategories);
 
   useEffect(() => {
     const fetchProducts = () => {
@@ -41,7 +48,9 @@ const AllProducts: FC = () => {
 
   useEffect(() => {
     if (category !== "all") {
+      console.log("oiiii", allProducts);
       const updated = allProducts.filter((pro) => pro.category === category);
+
       setCurrentProducts(updated);
     }
   }, [category, allProducts]);

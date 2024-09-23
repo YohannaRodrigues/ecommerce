@@ -6,14 +6,14 @@ import "swiper/css";
 
 const banners = [
   {
-    img: "banners/banner01.png",
+    img: "banners/banner02.png",
     link: "/product/4",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    text: "Canecas artesanais",
   },
   {
-    img: "banners/banner02.jpg",
+    img: "banners/banner01.png",
     link: "/product/4",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    text: "Máquinas de espresso",
   },
 ];
 
@@ -40,10 +40,12 @@ const Banner: FC = () => (
                   alt="banner"
                   className="max-h-[800px] w-full"
                 />
-                <div className="absolute top-1/3 mx-auto p-[2%] w-full container text-slate-50">
-                  <p className="text-sm lg:text-4xl">Veja</p>
-                  <p className="text-4xl">Nova coleção</p>
-                  <Link to={item.link}>{item.text}</Link>
+                <div className="absolute top-1/3 mx-auto p-[2%] w-full text-slate-50">
+                  <Link to={item.link}>
+                    <p className="text-sm lg:text-3xl">CONFIRA</p>
+                    <p className="text-4xl mb-1">NOVA COLEÇÃO</p>
+                    {item.text}
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>

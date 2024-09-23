@@ -1,7 +1,7 @@
 /* ------------------ BACKGRONDS -------------- */
 
 .bg-custom {
-  background-image: url("assets/background.jpg");
+  background-image: url("assets/background.png");
   background-size: cover;
   background-position: center center;
 }

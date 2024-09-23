@@ -22,8 +22,8 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/products" element={<AllProducts />} />
-            <Route path="/product/:productID" element={<SingleProduct />} />
+            <Route path="/category/:categoryId" element={<AllProducts />} />
+            <Route path="/product/:productId" element={<SingleProduct />} />
             <Route path="/wishlist" element={<ProtectedRoute />}>
               <Route path="/wishlist" element={<Wishlist />} />
             </Route>

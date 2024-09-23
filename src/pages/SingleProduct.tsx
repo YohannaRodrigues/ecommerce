@@ -54,6 +54,7 @@ const SingleProduct: FC = () => {
           setSimilar(filtered);
         });
     };
+
     if (sCategory && sCategory !== "") fetchPreferences(sCategory);
   }, [productID, sCategory]);
 
